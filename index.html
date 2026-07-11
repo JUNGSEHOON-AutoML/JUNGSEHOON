@@ -458,29 +458,35 @@
     <div class="projects-grid other-projects-grid">
       <!-- ── ARIA 디지털 트윈 HMI ── -->
       <article class="project-card featured-other-card" id="project-aria"
-        data-gallery='[
-          {"src":"assets/img/projects/hmi-live.gif","alt":"디지털 트윈 AI 에이전트 3D HMI 실시간 데모 (R3F)","type":"gif"}
-        ]'
-        aria-label="디지털 트윈 3D 이상 탐지 HMI (ARIA) — 3D 실시간 GIF 데모">
-        <div class="project-img-wrap gif-card" role="button" tabindex="0" aria-label="GIF 데모 실행하기">
-          <img src="assets/img/projects/hmi-live.gif"
-               alt="디지털 트윈 3D 이상 탐지 HMI (ARIA) — 3D 가상 공정 라인 모니터링 및 실시간 GPU 텔레메트리 연동 GIF"
-               class="project-img project-gif" loading="lazy" />
+        aria-label="ARIA — 산업용 실시간 비전·HMI 시스템">
+        <div class="project-img-wrap" style="aspect-ratio: 16 / 10;">
+          <video autoplay loop muted playsinline preload="none"
+                 poster="https://raw.githubusercontent.com/JUNGSEHOON-AutoML/Aria-virual-industrial/main/docs/images/hmi_capture_gpu.png"
+                 class="project-img"
+                 style="width:100%; height:100%; object-fit: cover; display:block;">
+            <source src="https://raw.githubusercontent.com/JUNGSEHOON-AutoML/Aria-virual-industrial/main/docs/images/hmi_live.mp4" type="video/mp4">
+          </video>
           <div class="project-overlay" aria-hidden="true"></div>
           <span class="project-year-badge">2026</span>
           <span class="photo-count-badge gif-badge" aria-hidden="true">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            GIF 데모
+            실시간 데모
           </span>
-          <div class="gallery-hint" aria-hidden="true">클릭해서 크게 보기</div>
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="ptag">React / R3F</span><span class="ptag">FastAPI</span><span class="ptag">FastAPI WebSockets</span><span class="ptag">DINO / PatchCore</span>
+            <span class="ptag">Python</span><span class="ptag">Computer Vision</span><span class="ptag">Real-time HMI</span><span class="ptag">Docker</span>
           </div>
-          <h3 class="project-title">디지털 트윈 3D 이상 탐지 HMI (ARIA)</h3>
-          <p class="project-type">개인 프로젝트 | Full-Stack &amp; 데이터 파이프라인</p>
-          <p class="project-desc">가상 공정 라인의 이상 탐지 및 실시간 모니터링을 위한 3D HMI 대시보드 시스템. DINO+PatchCore 모델 기반 31.5 fps 이상 탐지 FastAPI 백엔드와 React Three Fiber 기반 3D 웹 뷰를 연동하고, GPU/메모리 텔레메트리를 WebSocket으로 실시간 스트리밍 시각화 구현. (GitHub: <a href="https://github.com/JUNGSEHOON-AutoML/Aria-virual-industrial" target="_blank" rel="noopener noreferrer">Aria-virual-industrial</a>)</p>
+          <h3 class="project-title">ARIA — 산업용 실시간 비전·HMI 시스템</h3>
+          <p class="project-type">개인/팀 프로젝트 · 엔드투엔드 시스템 설계</p>
+          <p class="project-desc">
+            산업 현장의 설비 상태를 실시간으로 감지·시각화하는 비전 기반 HMI 시스템.
+            실시간 추론 파이프라인과 라이브 HMI 대시보드를 하드웨어·서버·프론트엔드까지
+            Docker로 통합해 엔드투엔드로 설계했다.
+          </p>
+          <a class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; margin-top: 12px; display: inline-flex; width: fit-content;"
+             href="https://github.com/JUNGSEHOON-AutoML/Aria-virual-industrial"
+             target="_blank" rel="noopener noreferrer">GitHub 저장소 →</a>
         </div>
       </article>
     </div>
