@@ -235,7 +235,7 @@ section { padding: 120px 0; position: relative; }
   border: 1px solid var(--border-light);
   box-shadow: 0 20px 50px rgba(0,0,0,0.8);
 }
-.lb-media-wrap img {
+.lb-media-wrap img, .lb-media-wrap iframe {
   max-width: 100%; max-height: 68vh;
   object-fit: contain;
   animation: lb-in 0.3s cubic-bezier(0.16, 1, 0.3, 1);

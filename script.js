@@ -161,12 +161,15 @@ function renderItem() {
   const item = gallery[current];
   lbMediaWrap.innerHTML = '';
 
-  if (item.type === 'gif') {
-    // GIF — use img tag (browsers animate it)
-    const img = document.createElement('img');
-    img.src = item.src;
-    img.alt = item.alt;
-    lbMediaWrap.appendChild(img);
+  if (item.type === 'iframe') {
+    const iframe = document.createElement('iframe');
+    iframe.src = item.src;
+    iframe.title = item.alt;
+    iframe.className = 'lb-iframe';
+    iframe.style.width = '100%';
+    iframe.style.height = '60vh';
+    iframe.style.border = 'none';
+    lbMediaWrap.appendChild(iframe);
   } else {
     const img = document.createElement('img');
     img.src = item.src;
