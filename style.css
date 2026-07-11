@@ -390,7 +390,53 @@ section { padding: 120px 0; position: relative; }
    ABOUT
 ═══════════════════════════════════ */
 #about { background: transparent; }
-.about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr 1fr; gap: 48px; align-items: start; }
+
+/* Profile Avatar Styles */
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-avatar-wrap {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* 증명사진 비율 고려 */
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition);
+  position: relative;
+}
+.profile-avatar-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(var(--accent-rgb), 0.15)) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+.profile-avatar-wrap:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+}
+.profile-avatar-wrap:hover .profile-avatar {
+  transform: scale(1.03);
+}
+
 .about-intro { font-size: 1.15rem; line-height: 1.8; margin-bottom: 22px; color: var(--text-primary); font-weight: 500; }
 .about-text p { color: var(--text-secondary); margin-bottom: 20px; }
 .about-text strong { color: var(--text-primary); font-weight: 600; }
@@ -650,7 +696,8 @@ section { padding: 120px 0; position: relative; }
   }
   .nav-links.open { transform: translateY(0); }
   .nav-links a { padding: 16px 32px; border-radius: 0; font-size: 1rem; width: 100%; text-align: center; }
-  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-profile { max-width: 240px; margin: 0 auto; }
   .about-stats { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .skills-grid { grid-template-columns: 1fr; }
