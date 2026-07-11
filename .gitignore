@@ -1,0 +1,35 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (if ever used)
+node_modules/
+
+# Build output (if ever used)
+dist/
+build/
+.cache/
+
+# Environment
+.env
+.env.local
+
+# Gemini / AI assistant temp files
+.gemini/
