@@ -33,3 +33,5 @@ build/
 
 # Gemini / AI assistant temp files
 .gemini/
+
+assets/img/resume/
