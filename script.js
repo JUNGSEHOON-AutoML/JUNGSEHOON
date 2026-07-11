@@ -6,17 +6,26 @@
 'use strict';
 
 /* ─── DOM Refs ─── */
-const navbar     = document.getElementById('navbar');
-const hamburger  = document.getElementById('hamburger-btn');
-const navLinks   = document.getElementById('nav-links');
-const backToTop  = document.getElementById('back-to-top');
-const navAnchors = document.querySelectorAll('.nav-links a');
-const sections   = document.querySelectorAll('section[id]');
+const navbar         = document.getElementById('navbar');
+const hamburger      = document.getElementById('hamburger-btn');
+const navLinks       = document.getElementById('nav-links');
+const backToTop      = document.getElementById('back-to-top');
+const navAnchors     = document.querySelectorAll('.nav-links a');
+const sections       = document.querySelectorAll('section[id]');
+const scrollProgress = document.getElementById('scroll-progress');
 
 /* ─── Navbar scroll ─── */
 function handleNavScroll() {
   navbar.classList.toggle('scrolled', window.scrollY > 20);
   backToTop.classList.toggle('visible', window.scrollY > 400);
+
+  // Scroll Progress Bar Update
+  const winScroll = window.scrollY || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+  if (scrollProgress) {
+    scrollProgress.style.width = scrolled + '%';
+  }
 
   let current = '';
   sections.forEach(s => {
