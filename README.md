@@ -1,5 +1,7 @@
 # Se-Hoon Jung · AI Research Portfolio
 
+🌐 **포트폴리오:** [https://jungsehoon-automl.github.io/JUNGSEHOON/](https://jungsehoon-automl.github.io/JUNGSEHOON/)
+
 GitHub Pages에 그대로 배포할 수 있는 **정적 HTML/CSS/JavaScript 포트폴리오**입니다. Manus 계열의 넓은 여백과 단순한 정보 위계를 참고하되, 연구 실적과 프로젝트 증거를 중심으로 별도로 설계했습니다. 별도 프레임워크·빌드 과정이 필요하지 않습니다.
 
 ## 완성된 메뉴·순서
