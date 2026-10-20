@@ -14,7 +14,7 @@ GitHub Pages에 그대로 배포할 수 있는 **정적 HTML/CSS/JavaScript 포�
 6. **AI 활용 개인 프로젝트** — ARIA/CNOTTA (Claude·Codex 활용), 학사·석사 프로젝트와 별도 분류
 7. Contact / CV
 
-상단 **Recruiter View / Full Portfolio** 전환으로 학부 팀 프로젝트 등의 자세한 아카이브를 펼칠 수 있습니다. 메인 우선순위 및 학술 실적은 두 보기에서 그대로 유지됩니다.
+MBTI 예측과 내돈어디가계 프로젝트는 두 보기에서 항상 표시됩니다. **Recruiter View / Full Portfolio** 전환은 추가 교과 과제·활동을 펼칩니다. 각 프로젝트의 원본 자료는 클릭해 확대할 수 있습니다.
 
 ## 배포 방법
 
