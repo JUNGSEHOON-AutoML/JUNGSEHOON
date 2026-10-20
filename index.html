@@ -27,7 +27,7 @@
   <div id="scroll-indicator" aria-hidden="true"></div>
   <header class="site-header" id="top">
     <div class="nav-container">
-      <a href="#top" class="brand" aria-label="정세훈 포트폴리오 처음으로"><span class="brand-mark">S<span class="brand-dot">.</span>J</span><span class="brand-caption">PORTFOLIO <span class="subtle">/ 2026</span></span></a>
+      <a href="#top" class="brand" aria-label="정세훈 포트폴리오 처음으로"><span class="brand-name">SE-HOON JUNG<span class="brand-dot">.</span></span><span class="brand-caption">PORTFOLIO <span class="subtle">/ 2026</span></span></a>
       <button type="button" class="mobile-menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
       <nav class="main-nav" id="main-nav" aria-label="사이트 메뉴">
         <a href="#publications">학술 실적</a>
@@ -49,28 +49,18 @@
           <div class="eyebrow"><span class="live-dot"></span> AI RESEARCH <span class="eyebrow-sep">/</span> COMPUTER VISION <span class="eyebrow-sep">/</span> ENGINEERING</div>
           <h1 id="hero-title">남길 데이터를 고르고,<br><span class="text-gradient">결과를 검증합니다.</span></h1>
           <p class="hero-lead">정상 특징 선별 연구에서 AI 코딩 에이전트로 구축한 실험 환경까지.<br class="desktop-break"> 문제를 정의하고, 구현하고, 비교 실험으로 확인해 왔습니다.</p>
-          <div class="hero-identity"><div class="hero-avatar"><img src="assets/img/profile.webp" width="48" height="64" alt="정세훈 프로필 사진"></div><div><strong>정세훈 <span class="latin">Se-Hoon Jung</span></strong><span>중앙대학교 AI학과 석사 · AutoML Lab</span></div></div>
+
           <div class="hero-cta">
             <a class="button button-primary" href="#publications">대표 성과 살펴보기 <span aria-hidden="true">↗</span></a>
             <a class="button button-secondary" href="assets/resume.pdf" download="Sehoon_Jung_Resume.pdf">이력서 PDF <span aria-hidden="true">↓</span></a>
             <a class="button button-ghost" href="https://github.com/JUNGSEHOON-AutoML" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <div class="hero-art" aria-label="특징 선별과 검증을 표현한 개념적 그래픽">
-          <div class="art-top"><span class="mini-dot"></span><span>FEATURE SELECTION / CONCEPT</span><span class="art-indicator">● ● ●</span></div>
-          <div class="art-intro"><span>SELECT</span><strong>Signal <em>over</em><br>redundancy.</strong></div>
-          <svg class="feature-art" viewBox="0 0 520 340" aria-hidden="true" focusable="false">
-            <defs><linearGradient id="linkGradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b5abff"/><stop offset="1" stop-color="#54e7c9"/></linearGradient><radialGradient id="glowGrad"><stop stop-color="#80ffe2" stop-opacity=".28"/><stop offset="1" stop-color="#80ffe2" stop-opacity="0"/></radialGradient></defs>
-            <circle cx="258" cy="165" r="170" fill="url(#glowGrad)"/>
-            <g stroke="white" stroke-opacity=".06" stroke-width="1"><path d="M24 74H496 M24 130H496 M24 186H496 M24 242H496 M24 298H496 M76 20V324 M132 20V324 M188 20V324 M244 20V324 M300 20V324 M356 20V324 M412 20V324 M468 20V324"/></g>
-            <g fill="#8292aa" opacity=".55"><circle cx="76" cy="91" r="5"/><circle cx="107" cy="116" r="5"/><circle cx="129" cy="89" r="5"/><circle cx="152" cy="142" r="5"/><circle cx="93" cy="170" r="5"/><circle cx="138" cy="210" r="5"/><circle cx="166" cy="176" r="5"/><circle cx="214" cy="115" r="5"/><circle cx="224" cy="183" r="5"/><circle cx="230" cy="247" r="5"/><circle cx="265" cy="202" r="5"/><circle cx="290" cy="85" r="5"/><circle cx="310" cy="141" r="5"/><circle cx="350" cy="104" r="5"/><circle cx="370" cy="190" r="5"/><circle cx="398" cy="165" r="5"/><circle cx="418" cy="215" r="5"/><circle cx="458" cy="100" r="5"/><circle cx="441" cy="270" r="5"/><circle cx="305" cy="273" r="5"/></g>
-            <path d="M152 142L265 202 370 190 458 100 M152 142L290 85 M265 202L230 247" fill="none" stroke="url(#linkGradient)" stroke-width="2" stroke-dasharray="6 6" opacity=".7"/>
-            <g fill="#96f6dd" stroke="#0b2727" stroke-width="4"><circle cx="152" cy="142" r="10"/><circle cx="265" cy="202" r="10"/><circle cx="370" cy="190" r="10"/><circle cx="458" cy="100" r="10"/><circle cx="290" cy="85" r="10"/></g>
-            <g fill="#96f6dd" opacity=".12"><circle cx="152" cy="142" r="23"/><circle cx="265" cy="202" r="25"/><circle cx="370" cy="190" r="23"/><circle cx="458" cy="100" r="23"/><circle cx="290" cy="85" r="23"/></g>
-            <g fill="#aabbd0" font-size="11" font-family="monospace"><text x="30" y="320">ALL PATCHES</text><text x="371" y="320">SELECTED</text></g>
-          </svg>
-          <div class="art-footer"><span>distance · coverage · evaluation</span><span class="arrow-glyph" aria-hidden="true">↗</span></div>
-        </div>
+        <aside class="profile-card" aria-label="정세훈 연구자 프로필">
+          <div class="profile-card-top"><span class="mini-dot"></span> RESEARCHER / ENGINEER</div>
+          <img class="profile-portrait" src="assets/img/profile.webp" width="354" height="472" alt="정세훈 프로필 사진" fetchpriority="high">
+          <div class="profile-card-copy"><span class="micro-label">AI RESEARCH · COMPUTER VISION</span><h2>정세훈 <span>Se-Hoon Jung</span></h2><p>중앙대학교 AI학과 석사<br>AutoML Lab</p><div class="profile-tags"><span>이상탐지</span><span>특징 선별</span><span>실험 검증</span></div></div>
+        </aside>
       </div>
       <div class="hero-floor"><span>RESEARCH / SOFTWARE ENGINEERING</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
     </section>
@@ -134,7 +124,11 @@
 
     <section class="content-section section-wrap independent-section" id="agent-project" aria-labelledby="agent-title">
       <div class="section-heading"><div><span class="micro-label">05 — AI CODING AGENT / INDEPENDENT PROJECT</span><h2 id="agent-title">AI 활용 개인 프로젝트<span class="heading-period">.</span></h2><p class="section-summary">AI에 구현을 맡기되, 실험의 조건과 결과를 확인하는 책임은 직접 맡았습니다.</p></div><span class="section-side-note">ARIA / CNOTTA<br>2026.06—10</span></div>
-      <div class="agent-feature"><div class="agent-main"><div class="agent-lead-tag"><span class="live-dot"></span> PERSONAL PROJECT · CLAUDE + CODEX</div><h3>ARIA <span>/ Industrial Simulation</span></h3><p class="agent-intro">실제 공장의 데이터와 설비에 접근하기 어려워, 비전 검사·이송·재검사 조건을 가상으로 비교하는 디지털 트윈 기반 공정 시뮬레이션을 개발했습니다.</p><div class="agent-roles"><div><span>WHY</span><p>설비를 구매하거나 운영하지 않고 공정 조건별 가설 검증</p></div><div><span>MY ROLE</span><p>기획·입력 데이터·실험 계산 규칙·중단 조건 정의, 코드·결과 검증</p></div><div><span>AI TOOLS</span><p>Claude: 명세·오류 분석 / Codex: 코드 구현·테스트</p></div></div><div class="agent-links"><a class="button button-primary compact" href="projects/aria.html">AI 활용 과정 상세 보기 ↗</a><a class="text-link" href="https://github.com/JUNGSEHOON-AutoML/Aria-virual-industrial" target="_blank" rel="noopener noreferrer">GitHub 저장소 ↗</a></div></div><div class="agent-proof"><div class="agent-proof-head"><span>VALIDATED EVENTS</span><span class="agent-proof-badge">RESEARCH PROTOTYPE</span></div><div class="agent-metric"><strong>4 <span>→</span> 1</strong><p>용기 이미지 83장 · 동일 K=10,500 비교에서 미탐 감소, 정상 오탐 0건 유지</p></div><div class="agent-proof-grid"><div><strong>322</strong><span>무효 처리한 기존 실험 결과</span></div><div><strong>2,970</strong><span>정책 A 고유 DES 결과</span></div><div><strong>4,320</strong><span>정책 B 사후 계산 결과</span></div><div><strong>267</strong><span>통과한 백엔드 테스트 · 3개 skip</span></div></div><p class="agent-boundary">가상 조건의 결과입니다. 4,320개는 별도 시뮬레이션 실행 수가 아니며 실제 공장 개선 실적으로 해석하지 않습니다.</p></div></div>
+      <div class="aria-showcase">
+        <figure class="aria-film"><div class="media-label"><span class="mini-dot"></span> FACTORY / RECORDED DEMO</div><video controls playsinline preload="none" poster="assets/img/projects/aria-factory.webp" aria-label="ARIA 가상 공장 가동과 순찰 로봇 녹화"><source src="assets/media/aria-factory.mp4" type="video/mp4">브라우저에서 영상을 재생할 수 없습니다. <a href="assets/media/aria-factory.mp4">공장 영상 열기</a></video><figcaption><strong>공정이 흐르고, 로봇이 순찰하는 가상 공장</strong><span>저장된 시뮬레이터 화면 녹화 · 재생 버튼으로 확인하세요.</span></figcaption></figure>
+        <figure class="aria-robot"><div class="media-label">ROBOT / VIRTUAL JOINT CONTROL</div><img src="assets/img/projects/aria-robot.webp" width="1600" height="981" loading="lazy" alt="ARIA 로봇 구동 모듈: 가상 로봇 팔과 관절 상태, 작업 단계 화면" data-enlarge><figcaption><strong>로봇 팔의 작업과 관절 상태</strong><span>저장소의 구동 모듈 캡처 · 클릭하면 확대됩니다.</span></figcaption><p class="media-note">가상 공정의 데모 화면입니다. 실물 설비 촬영이나 실기기 제어 기록이 아닙니다.</p></figure>
+      </div>
+      <div class="agent-feature"><div class="agent-main"><div class="agent-lead-tag"><span class="live-dot"></span> PERSONAL PROJECT · AI-ASSISTED DEVELOPMENT</div><h3>ARIA <span>/ Industrial Simulation</span></h3><p class="agent-intro">실제 공장의 데이터와 설비에 접근하기 어려워, 비전 검사·이송·재검사 조건을 가상으로 비교하는 디지털 트윈 기반 공정 시뮬레이션을 개발했습니다.</p><div class="agent-tools" aria-label="프로젝트에 활용한 AI 도구"><div class="agent-tool"><img src="assets/brand/claude.svg" width="28" height="28" alt=""><div><strong>Claude</strong><span>명세 · 오류 분석</span></div></div><span class="agent-tool-plus" aria-hidden="true">+</span><div class="agent-tool"><img class="codex-logo" src="assets/brand/codex.svg" width="28" height="28" alt=""><div><strong>Codex</strong><span>코드 구현 · 테스트</span></div></div></div><div class="agent-roles"><div><span>WHY</span><p>설비를 구매하거나 운영하지 않고 공정 조건별 가설 검증</p></div><div><span>MY ROLE</span><p>기획·입력 데이터·실험 계산 규칙·중단 조건 정의, 코드·결과 검증</p></div><div><span>AI TOOLS</span><p>Claude: 명세·오류 분석 / Codex: 코드 구현·테스트</p></div></div><div class="agent-links"><a class="button button-primary compact" href="projects/aria.html">AI 활용 과정 상세 보기 ↗</a><a class="text-link" href="https://github.com/JUNGSEHOON-AutoML/Aria-virual-industrial" target="_blank" rel="noopener noreferrer">GitHub 저장소 ↗</a></div></div><div class="agent-proof"><div class="agent-proof-head"><span>VALIDATED EVENTS</span><span class="agent-proof-badge">RESEARCH PROTOTYPE</span></div><div class="agent-metric"><strong>4 <span>→</span> 1</strong><p>용기 이미지 83장 · 동일 K=10,500 비교에서 미탐 감소, 정상 오탐 0건 유지</p></div><div class="agent-proof-grid"><div><strong>322</strong><span>무효 처리한 기존 실험 결과</span></div><div><strong>2,970</strong><span>정책 A 고유 DES 결과</span></div><div><strong>4,320</strong><span>정책 B 사후 계산 결과</span></div><div><strong>267</strong><span>통과한 백엔드 테스트 · 3개 skip</span></div></div><p class="agent-boundary">가상 조건의 결과입니다. 4,320개는 별도 시뮬레이션 실행 수가 아니며 실제 공장 개선 실적으로 해석하지 않습니다.</p></div></div>
     </section>
 
     <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title"><div class="contact-panel"><div><span class="micro-label">NEXT CONVERSATION</span><h2 id="contact-title">연구와 구현에 대해<br><span class="text-gradient">더 이야기하고 싶다면.</span></h2><p>문제 정의부터 실험 검증까지, 실제로 수행한 과정과 결과를 설명할 수 있습니다.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:storyfor980107@gmail.com">이메일로 연락하기 ↗</a><a class="button button-secondary" href="assets/resume.pdf" download="Sehoon_Jung_Resume.pdf">CV 다운로드 ↓</a><a class="button button-ghost" href="https://github.com/JUNGSEHOON-AutoML" target="_blank" rel="noopener noreferrer">GitHub 방문 ↗</a></div></div></section>
